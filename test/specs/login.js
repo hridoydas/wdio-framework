@@ -1,5 +1,5 @@
-// import LoginPage from '../pages/loginPage';
 const LoginPage = require('./pages/loginPage');
+const chaiExpect = require("chai").expect;
 
 describe("Marcombox automation", ()=>{
   console.log("Automation Started");
@@ -9,7 +9,8 @@ describe("Marcombox automation", ()=>{
       await browser.url('/');
        
       //asert title
-      // await expect(browser).toHaveTitle("Log in - Automation | Brandshare DAM");
+      const title = await browser.getTitle();
+      await chaiExpect(title).to.include("Brandshare DAM");
       // console.log("Title is verified");
   });
 
@@ -25,6 +26,7 @@ describe("Marcombox automation", ()=>{
       await LoginPage.loginButton.waitForDisplayed();
       await LoginPage.loginButton.click();
       await expect(browser).toHaveTitle("Automation | Brandshare DAM");
+      
       await browser.pause(5000);
       
 
