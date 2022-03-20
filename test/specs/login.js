@@ -28,6 +28,7 @@ describe("Marcombox automation", ()=>{
       await expect(browser).toHaveTitle("Automation | Brandshare DAM");
       
       await browser.pause(5000);
+      // await browser.debug();
       
 
   })
