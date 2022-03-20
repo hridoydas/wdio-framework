@@ -13,7 +13,7 @@ class LoginPage{
     }
 
     get loginButton(){
-        return $("//button[contains(.,'LOG IN')]");
+        return $("//button[@type='submit']");
     }
 }
 
