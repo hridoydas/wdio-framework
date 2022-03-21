@@ -26,6 +26,7 @@ describe("Marcombox automation", ()=>{
       await LoginPage.loginPassword.addValue("Test@@00");
       await browser.pause(5000);
       await LoginPage.loginButton.waitForDisplayed();
+      await chaiExpect(LoginPage.loginButton).to.include("Marcombox");
       await LoginPage.loginButton.click();
       await expect(browser).toHaveTitle("Automation | Brandshare DAM");
       

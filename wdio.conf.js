@@ -28,10 +28,7 @@ exports.config = {
         './test/specs/**/*.js'
         // './test/specs/index.js'
     ],
-    reporters: [['allure', {
-        outputDir: 'automation-reports',
-        disableWebdriverScreenshotsReporting: false,
-    }]],
+    
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -146,17 +143,22 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    // reporters: ['spec'],
     
-
-    
+    reporters: [
+        [
+            'allure', 
+            {
+        outputDir: 'reports',
+        disableWebdriverScreenshotsReporting: false,
+    }]],
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000,
-        grep: "mb",
+        // grep: "mb",
     },
     //
     // =====

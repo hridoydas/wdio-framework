@@ -1,0 +1,102 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Demo QA Site Test",
+    "children" : [ {
+      "name" : "Nevigate to the site",
+      "uid" : "b0fb215649999575",
+      "parentUid" : "55cfbdda022f3c1017916c8050b1eac2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647860853328,
+        "stop" : 1647860868742,
+        "duration" : 15414
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-99.0.4844.74" ]
+    } ],
+    "uid" : "55cfbdda022f3c1017916c8050b1eac2"
+  }, {
+    "name" : "Marcombox automation",
+    "children" : [ {
+      "name" : "Open URL and Check Title",
+      "uid" : "19582bea3f6e396a",
+      "parentUid" : "9b1b52ac1225188204e98743e106f3f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647860871053,
+        "stop" : 1647860876162,
+        "duration" : 5109
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-99.0.4844.74" ]
+    }, {
+      "name" : "Enter Credentials",
+      "uid" : "8990c80a5d5d3a4a",
+      "parentUid" : "9b1b52ac1225188204e98743e106f3f6",
+      "status" : "failed",
+      "time" : {
+        "start" : 1647860876163,
+        "stop" : 1647860904080,
+        "duration" : 27917
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-99.0.4844.74" ]
+    } ],
+    "uid" : "9b1b52ac1225188204e98743e106f3f6"
+  }, {
+    "name" : "Should set my settings details",
+    "children" : [ {
+      "name" : "Open My Settings pop up",
+      "uid" : "f6d502cea8deff36",
+      "parentUid" : "121a77f79ab6747bb1b55ed349903ece",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647860904099,
+        "stop" : 1647860904347,
+        "duration" : 248
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-99.0.4844.74" ]
+    }, {
+      "name" : "Set Details and save",
+      "uid" : "faf79ccf780d129",
+      "parentUid" : "121a77f79ab6747bb1b55ed349903ece",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647860904347,
+        "stop" : 1647860911635,
+        "duration" : 7288
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-99.0.4844.74" ]
+    } ],
+    "uid" : "121a77f79ab6747bb1b55ed349903ece"
+  } ]
+}

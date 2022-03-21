@@ -1,0 +1,114 @@
+{
+  "uid" : "b0fb215649999575",
+  "name" : "Nevigate to the site",
+  "fullName" : "Demo QA Site Test.Nevigate to the site",
+  "historyId" : "12bf78a0ace13f2d7c0a26dc3a3773b3",
+  "time" : {
+    "start" : 1647860853328,
+    "stop" : 1647860868742,
+    "duration" : 15414
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1647860853331,
+        "stop" : 1647860853470,
+        "duration" : 139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "15da69ed47f2aeeb",
+        "name" : "Response",
+        "source" : "15da69ed47f2aeeb.json",
+        "type" : "application/json",
+        "size" : 59
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1647860853470,
+        "stop" : 1647860863740,
+        "duration" : 10270
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7ae46bf0d2cee653",
+        "name" : "Request",
+        "source" : "7ae46bf0d2cee653.json",
+        "type" : "application/json",
+        "size" : 34
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Demo QA Site Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Demo QA Site Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Nevigate to the site"
+  }, {
+    "name" : "package",
+    "value" : "Demo QA Site Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-99.0.4844.74"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b0fb215649999575.json",
+  "parameterValues" : [ "chrome-99.0.4844.74" ]
+}
