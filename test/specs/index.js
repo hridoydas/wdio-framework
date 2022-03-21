@@ -4,7 +4,7 @@ const MySettingsPage = require('./pages/mySettingsPage');
 
 
 describe("Marcombox automation", ()=>{
-  console.log("Automation Started");
+  console.log("Automation Started========>");
   
   it("Open URL and Check Title", async()=>{
       await browser.maximizeWindow();
@@ -31,8 +31,6 @@ describe("Marcombox automation", ()=>{
       
       await browser.pause(5000);
       // await browser.debug();
-      
-
   })
 })
 
@@ -40,10 +38,8 @@ describe("Should set my settings details", ()=>{
 
   it("Open My Settings pop up", async()=>{
       await MySettingsPage.myProfile.click();
-      await MySettingsPage.mySettings.click();
-      
+      await MySettingsPage.mySettings.click();    
   });
-
   it("Set Details and save", async()=>{
       await browser.pause(2000);
       await MySettingsPage.timezoneDropdown.click();
@@ -52,5 +48,6 @@ describe("Should set my settings details", ()=>{
       await MySettingsPage.dateFormateValue.click();
       await MySettingsPage.saveButton.click();
       await browser.pause(5000);
+      
   })
 })
