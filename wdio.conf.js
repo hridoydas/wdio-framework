@@ -28,6 +28,10 @@ exports.config = {
         './test/specs/**/*.js'
         // './test/specs/index.js'
     ],
+    // reporters: [['allure', {
+    //     outputDir: 'automation-reports',
+    //     disableWebdriverScreenshotsReporting: false,
+    // }]],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -143,7 +147,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
-
+    
 
     
     //
@@ -151,7 +155,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        grep: "mb",
     },
     //
     // =====
@@ -248,6 +253,9 @@ exports.config = {
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //     if (error){
+    //         browser.takeScreenshot();
+    //     }
     // },
 
 

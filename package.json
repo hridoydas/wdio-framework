@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/wdio ./wdio.conf.js",
-    // "marcombox": "npx run wdio.conf.js --suite mbAutomation"
+    "prod": "npx wdio run wdio.conf.js --suite mbAutomation",
+    "rc": "npx wdio run rc.conf.js"
   },
   "keywords": [],
   "author": "hridoy_das",
   "license": "ISC",
   "devDependencies": {
+    "@wdio/allure-reporter": "^7.18.0",
     "@wdio/cli": "^7.18.1",
     "@wdio/local-runner": "^7.18.1",
     "@wdio/mocha-framework": "^7.18.0",
