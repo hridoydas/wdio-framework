@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Mar 21 17:07:33 BDT 2022","Mon Mar 21 17:07:48 BDT 2022","15414","","Demo QA Site Test","","Demo QA Site Test","Nevigate to the site","Nevigate to the site",""
-"passed","Mon Mar 21 17:07:51 BDT 2022","Mon Mar 21 17:07:56 BDT 2022","5109","","Marcombox automation","","Marcombox automation","Open URL and Check Title","Open URL and Check Title",""
-"failed","Mon Mar 21 17:07:56 BDT 2022","Mon Mar 21 17:08:24 BDT 2022","27917","","Marcombox automation","","Marcombox automation","Enter Credentials","Enter Credentials",""
-"passed","Mon Mar 21 17:08:24 BDT 2022","Mon Mar 21 17:08:31 BDT 2022","7288","","Should set my settings details","","Should set my settings details","Set Details and save","Set Details and save",""
-"passed","Mon Mar 21 17:08:24 BDT 2022","Mon Mar 21 17:08:24 BDT 2022","248","","Should set my settings details","","Should set my settings details","Open My Settings pop up","Open My Settings pop up",""

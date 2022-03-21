@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//input[@class='sign-in-box-input _s_Password']"
-}

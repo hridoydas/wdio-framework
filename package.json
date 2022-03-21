@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node_modules/.bin/wdio ./wdio.conf.js",
     "prod": "npx wdio run wdio.conf.js --suite mbAutomation",
-    "rc": "npx wdio run rc.conf.js"
+    "rc": "npx wdio run rc.conf.js",
+    "getReport": "allure generate reports --clean && allure open"
   },
   "keywords": [],
   "author": "hridoy_das",
