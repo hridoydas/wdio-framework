@@ -8,15 +8,15 @@ class MySettings{
         return $("._s_MySettings");
     }
     get timezoneDropdown(){
-        return ("#UserRegionalSettings_TimeZone");
+        return $("//select[@id='UserRegionalSettings_TimeZone']");
     }
 
     get timezoneValue(){
-        return ("//option[@value='Asia/Dhaka']");
+        return $("//option[@value='Asia/Dhaka']");
     }
     
     get dateFormateDropdown(){
-        return ("#UserRegionalSettings_DateFormat");
+        return $("#UserRegionalSettings_DateFormat");
     }
 
     get dateFormateValue(){
@@ -24,7 +24,7 @@ class MySettings{
     }
 
     get saveButton(){
-        return $(".btn btn-primary _s_primary _s_Save");
+        return $("//button[contains(.,'Save')]");
     }
 }
 

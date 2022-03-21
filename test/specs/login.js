@@ -1,5 +1,7 @@
-const LoginPage = require('./pages/loginPage');
 const chaiExpect = require("chai").expect;
+const LoginPage = require('./pages/loginPage');
+const MySettingsPage = require('./pages/mySettingsPage');
+
 
 describe("Marcombox automation", ()=>{
   console.log("Automation Started");
@@ -31,5 +33,24 @@ describe("Marcombox automation", ()=>{
       // await browser.debug();
       
 
+  })
+})
+
+describe("Should set my settings details", ()=>{
+
+  it("Open My Settings pop up", async()=>{
+      await MySettingsPage.myProfile.click();
+      await MySettingsPage.mySettings.click();
+      
+  });
+
+  it("Set Details and save", async()=>{
+      await browser.pause(2000);
+      await MySettingsPage.timezoneDropdown.click();
+      await MySettingsPage.timezoneValue.click();
+      await MySettingsPage.dateFormateDropdown.click();
+      await MySettingsPage.dateFormateValue.click();
+      await MySettingsPage.saveButton.click();
+      await browser.pause(5000);
   })
 })
