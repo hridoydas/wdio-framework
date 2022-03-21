@@ -28,10 +28,10 @@ exports.config = {
         './test/specs/**/*.js'
         // './test/specs/index.js'
     ],
-    // reporters: [['allure', {
-    //     outputDir: 'automation-reports',
-    //     disableWebdriverScreenshotsReporting: false,
-    // }]],
+    reporters: [['allure', {
+        outputDir: 'automation-reports',
+        disableWebdriverScreenshotsReporting: false,
+    }]],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -252,11 +252,11 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    //     if (error){
-    //         browser.takeScreenshot();
-    //     }
-    // },
+    afterTest: function(test, context, { error, result, duration, passed, retries }) {
+        if (error){
+            browser.takeScreenshot();
+        }
+    },
 
 
     /**
