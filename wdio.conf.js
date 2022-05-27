@@ -22,7 +22,9 @@ exports.config = {
     //
     suites:{
         mbAutomation: ['test/specs/index.js'],
+        signUp: ['test/specs/signUp.js'],
         mbAndDemoqa: ['test/specs/index.js', 'test/specs/demoqa.js']
+
     },
     specs: [
         './test/specs/**/*.js'
@@ -105,7 +107,8 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://automation.marcombox.com/',
+    // baseUrl: 'https://automation.marcombox.com/',
+    baseUrl:'https://signup.mrbjarke.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
